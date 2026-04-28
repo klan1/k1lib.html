@@ -1,0 +1,21 @@
+<?php
+
+namespace k1html\html;
+
+class style extends tag {
+
+    use append_shotcuts;
+
+    /**
+     * Create a SCRIPT html tag with VALUE as data. Use $style->set_value($crs) 
+     * for load a file.
+     * @param string $class
+     * @param string $id
+     */
+    function __construct($style = NULL) {
+        parent::__construct("style", FALSE);
+        if (!empty($style)) {
+            $this->set_value($style);
+        }
+    }
+}

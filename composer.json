@@ -1,0 +1,14 @@
+{
+    "name": "klan1/k1lib.html",
+    "description": "HTML components for k1lib",
+    "license": "Apache-2.0",
+    "type": "library",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "k1html\\html\\": "src/html/"
+        }
+    }
+}

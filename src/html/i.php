@@ -1,0 +1,18 @@
+<?php
+
+namespace k1html\html;
+
+/**
+ * I
+ */
+class i extends tag {
+
+    use append_shotcuts;
+
+    function __construct($value = NULL, $class = NULL, $id = NULL) {
+        parent::__construct("i", FALSE);
+        $this->set_value($value);
+        $this->set_class($class);
+        $this->set_id($id);
+    }
+}
