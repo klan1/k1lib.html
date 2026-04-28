@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "k1html\\html\\": "src/html/"
+            "k1html\\html\\": "src/klan1/html/"
         }
     }
 }
