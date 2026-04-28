@@ -36,3 +36,8 @@ echo $doc->generate();
 ## License
 
 This project is licensed under the Apache-2.0 License.
+
+---
+Alejandro Trujillo Jiménez
+**Klan1 Labs - R&D Team**
+Website: **[klan1.com](https://klan1.com)**
