@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html;
+namespace k1lib\html;
 
 const IS_SELF_CLOSED = TRUE;
 const IS_NOT_SELF_CLOSED = FALSE;

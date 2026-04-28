@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-use k1html\html\div;
+use k1lib\html\div;
 
 class modal extends div {
 

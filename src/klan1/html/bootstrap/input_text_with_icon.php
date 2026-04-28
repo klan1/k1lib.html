@@ -1,9 +1,9 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-use k1html\html\div;
-use k1html\html\input as input_tag;
+use k1lib\html\div;
+use k1lib\html\input as input_tag;
 
 class input_text_with_icon extends div {
 

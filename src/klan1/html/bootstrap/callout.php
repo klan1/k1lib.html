@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-class callout extends \k1html\html\div {
+class callout extends \k1lib\html\div {
 
     use bootstrap_methods;
 
@@ -21,7 +21,7 @@ class callout extends \k1html\html\div {
         parent::__construct("callout", NULL);
         $this->set_attrib("data-closable", TRUE);
         if ($closable) {
-            $close_button = new \k1html\html\button(NULL, "close-button");
+            $close_button = new \k1lib\html\button(NULL, "close-button");
             $close_button->set_attrib("data-close", TRUE);
             $close_button->set_attrib("aria-label", "Close reveal");
             $close_button->append_span()->set_attrib("aria-hidden", TRUE)->set_value("&times;");
@@ -60,7 +60,7 @@ class callout extends \k1html\html\div {
 
     public function generate($with_childs = \TRUE, $n_childs = 0) {
         if (!empty($this->title)) {
-            $h6 = new \k1html\html\h6($this->title);
+            $h6 = new \k1lib\html\h6($this->title);
         } else {
             $h6 = "";
         }

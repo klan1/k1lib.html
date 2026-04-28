@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html;
+namespace k1lib\html;
 
 /**
  * K1.lib V1 compatibility layer

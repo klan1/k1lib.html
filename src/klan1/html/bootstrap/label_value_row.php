@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-use k1html\html\div;
+use k1lib\html\div;
 
 class label_value_row extends div {
 
@@ -15,9 +15,9 @@ class label_value_row extends div {
 
         $form_group = $this->append_div('form-group');
 
-        if (is_object($value) && is_subclass_of($value, 'k1html\html\tag')) {
+        if (is_object($value) && is_subclass_of($value, 'k1lib\html\tag')) {
             $input_name = $this->get_name_attribute($value);
-            $label_tag = new \k1html\html\label($label, $input_name, "k1lib-label-object k1lib-data-item-label");
+            $label_tag = new \k1lib\html\label($label, $input_name, "k1lib-label-object k1lib-data-item-label");
             if ($value->get_tag_name() != 'div') {
                 /**
                  * this line is Boostrap specific for the future changes
@@ -25,7 +25,7 @@ class label_value_row extends div {
                 $value->set_class('form-control', TRUE);
             }
         } else {
-            $label_tag = new \k1html\html\label($label, null, "k1lib-label-object");
+            $label_tag = new \k1lib\html\label($label, null, "k1lib-label-object");
         }
         $form_group->set_value("$label_tag $value");
     }
@@ -33,7 +33,7 @@ class label_value_row extends div {
     private function get_name_attribute($tag_object) {
         if (\method_exists($tag_object, "get_elements_by_tag")) {
             if (!isset($tag_object)) {
-                $tag_object = new \k1html\html\input("input", "dummy", null);
+                $tag_object = new \k1lib\html\input("input", "dummy", null);
             }
             $elements = $tag_object->get_elements_by_tag("input");
             if (empty($elements)) {

@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
-class table_from_data extends \k1html\html\table {
+class table_from_data extends \k1lib\html\table {
 
     static public $float_round_default = NULL;
 
@@ -136,7 +136,7 @@ class table_from_data extends \k1html\html\table {
         $this->fields_for_key_array_text = $fields_for_key_array_text;
     }
 
-    public function insert_tag_on_field(\k1html\html\tag $tag_object, array $fields_to_insert, $tag_attrib_to_use = NULL, $append = FALSE, $respect_blanks = FALSE, $just_replace_attribs = FALSE, $just_this_row = NULL) {
+    public function insert_tag_on_field(\k1lib\html\tag $tag_object, array $fields_to_insert, $tag_attrib_to_use = NULL, $append = FALSE, $respect_blanks = FALSE, $just_replace_attribs = FALSE, $just_this_row = NULL) {
         $row = 0;
         //        if ($just_replace_attribs) {
         //            echo "child call - row_key:$just_this_row<br>";

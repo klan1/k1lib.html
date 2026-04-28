@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
 class label_value_row extends grid_row {
 
@@ -19,8 +19,8 @@ class label_value_row extends grid_row {
             $this->cell(1)->append_child($label->set_class("k1lib-label-object right inline hide-for-small-only text-right"));
             $this->cell(1)->append_child($small_label->set_class("k1lib-label-object left show-for-small-only"));
         } else {
-            $this->cell(1)->append_child(new \k1html\html\label($label, $input_name, "k1lib-label-object right inline hide-for-small-only text-right"));
-            $this->cell(1)->append_child(new \k1html\html\label($label, $input_name, "k1lib-label-object left show-for-small-only"));
+            $this->cell(1)->append_child(new \k1lib\html\label($label, $input_name, "k1lib-label-object right inline hide-for-small-only text-right"));
+            $this->cell(1)->append_child(new \k1lib\html\label($label, $input_name, "k1lib-label-object left show-for-small-only"));
         }
         $this->cell(2)->set_value($value);
     }
@@ -28,7 +28,7 @@ class label_value_row extends grid_row {
     private function get_name_attribute($tag_object) {
         if (\method_exists($tag_object, "get_elements_by_tag")) {
             if (!isset($tag_object)) {
-                $tag_object = new \k1html\html\input("input", "dummy", NULL);
+                $tag_object = new \k1lib\html\input("input", "dummy", NULL);
             }
             $elements = $tag_object->get_elements_by_tag("input");
             if (empty($elements)) {

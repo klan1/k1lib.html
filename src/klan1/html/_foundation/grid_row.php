@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
-class grid_row extends \k1html\html\div {
+class grid_row extends \k1lib\html\div {
 
     use foundation_methods;
 
@@ -32,7 +32,7 @@ class grid_row extends \k1html\html\div {
 
     /**
      * @param integer $col_number
-     * @return \k1html\html\foundation\grid_cell
+     * @return \k1lib\html\foundation\grid_cell
      */
     public function col($col_number) {
         return $this->cell($col_number);
@@ -40,7 +40,7 @@ class grid_row extends \k1html\html\div {
 
     /**
      * @param integer $col_number
-     * @return \k1html\html\foundation\grid_cell
+     * @return \k1lib\html\foundation\grid_cell
      */
     public function cell($col_number) {
         if (isset($this->num_cols[$col_number])) {
@@ -49,7 +49,7 @@ class grid_row extends \k1html\html\div {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function expanded() {
         $this->set_attrib("class", "expanded", TRUE);

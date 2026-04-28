@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
 class top_bar extends bar {
 
@@ -10,7 +10,7 @@ class top_bar extends bar {
     protected $menu_left = null;
 
     /**
-     * @var \k1html\html\span
+     * @var \k1lib\html\span
      */
     protected $title = null;
 
@@ -24,7 +24,7 @@ class top_bar extends bar {
     }
 
     /**
-     * @return \k1html\html\span
+     * @return \k1lib\html\span
      */
     public function title() {
         return $this->title;

@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html;
+namespace k1lib\html;
 
 /**
  * Static Class to log all the Class tag actions 

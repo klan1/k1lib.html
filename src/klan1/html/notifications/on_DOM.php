@@ -8,10 +8,10 @@
  * @package notifications
  */
 
-namespace k1html\html\notifications;
+namespace k1lib\html\notifications;
 
 use k1app\template\mazer\components\alert;
-use k1html\html\ul;
+use k1lib\html\ul;
 
 class on_DOM extends common_code {
 

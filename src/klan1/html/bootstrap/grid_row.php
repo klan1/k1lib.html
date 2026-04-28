@@ -1,9 +1,9 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-use k1html\html\div;
-use k1html\html\bootstrap\grid_cell;
+use k1lib\html\div;
+use k1lib\html\bootstrap\grid_cell;
 
 class grid_row extends div {
 

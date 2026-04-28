@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
-class grid extends \k1html\html\div {
+class grid extends \k1lib\html\div {
 
     use foundation_methods;
 
@@ -13,7 +13,7 @@ class grid extends \k1html\html\div {
     protected $num_rows;
     protected $num_cols;
 
-    public function __construct($num_rows, $num_cols, \k1html\html\tag $parent = NULL) {
+    public function __construct($num_rows, $num_cols, \k1lib\html\tag $parent = NULL) {
         $this->parent = $parent;
 
         $this->num_rows = 0;
@@ -36,7 +36,7 @@ class grid extends \k1html\html\div {
 
     /**
      * @param integer $row_number
-     * @return \k1html\html\foundation\grid_row
+     * @return \k1lib\html\foundation\grid_row
      */
     public function row($row_number) {
         if (isset($this->rows[$row_number])) {
@@ -48,7 +48,7 @@ class grid extends \k1html\html\div {
      * 
      * @param int $num_cols
      * @param int $grid_row
-     * @return \k1html\html\foundation\grid_row
+     * @return \k1lib\html\foundation\grid_row
      */
     public function append_row($num_cols = NULL, $grid_row = NULL, $parent = NULL) {
         if ($num_cols === NULL) {

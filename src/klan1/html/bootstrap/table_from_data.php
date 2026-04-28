@@ -1,9 +1,9 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-use k1html\html\table;
-use k1html\html\tag;
+use k1lib\html\table;
+use k1lib\html\tag;
 use k1lib\K1MAGIC;
 
 class table_from_data extends table {

@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
-class grid_cell extends \k1html\html\div {
+class grid_cell extends \k1lib\html\div {
 
     use foundation_methods;
 
@@ -25,7 +25,7 @@ class grid_cell extends \k1html\html\div {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function end() {
         $this->set_attrib("class", "end", TRUE);
@@ -35,7 +35,7 @@ class grid_cell extends \k1html\html\div {
     /**
      * @param integer $num_rows
      * @param integer $num_cols
-     * @return \k1html\html\foundation\grid
+     * @return \k1lib\html\foundation\grid
      */
     public function append_grid($num_rows, $num_cols) {
         $grid = new grid($num_rows, $num_cols, $this);

@@ -1,8 +1,8 @@
 <?php
 
-namespace k1html\html\bootstrap;
+namespace k1lib\html\bootstrap;
 
-class menu extends \k1html\html\ul {
+class menu extends \k1lib\html\ul {
 
     protected $type = '';
     protected $is_vertical = false;
@@ -66,7 +66,7 @@ class menu extends \k1html\html\ul {
      * @param string $label
      * @param string $id
      * @param string $where
-     * @return \k1html\html\li
+     * @return \k1lib\html\li
      */
     function add_menu_item($href, $label, $id = NULL, $where_id = NULL) {
         if (!empty($where_id)) {

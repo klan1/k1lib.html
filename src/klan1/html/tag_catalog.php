@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html;
+namespace k1lib\html;
 
 /**
  * Holds all the tags created with the tag Class.
@@ -53,7 +53,7 @@ class tag_catalog {
 
     /**
      * Increase the index value and returns the new index value.
-     * @param \k1html\html\tag $tag_object
+     * @param \k1lib\html\tag $tag_object
      * @return integer
      */
     static function increase(tag $tag_object) {
@@ -65,7 +65,7 @@ class tag_catalog {
     /**
      * Remove the tag Object from the Array catalog, this will disable the 
      * Object to be found or generated on chain actions.
-     * @param integer|\k1html\html\tag $tag_index
+     * @param integer|\k1lib\html\tag $tag_index
      */
     static function decatalog($tag_index) {
         if (is_object($tag_index) && method_exists($tag_index, "get_tag_id")) {

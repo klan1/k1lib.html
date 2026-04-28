@@ -1,19 +1,19 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
-class off_canvas extends \k1html\html\tag {
+class off_canvas extends \k1lib\html\tag {
 
     use foundation_methods;
-    use \k1html\html\append_shotcuts;
+    use \k1lib\html\append_shotcuts;
 
     /**
-     * @var \k1html\html\tag
+     * @var \k1lib\html\tag
      */
     protected $parent;
 
     /**
-     * @var \k1html\html\div
+     * @var \k1lib\html\div
      */
     protected $left = null;
 
@@ -33,7 +33,7 @@ class off_canvas extends \k1html\html\tag {
     protected $menu_left_tail = null;
 
     /**
-     * @var \k1html\html\div
+     * @var \k1lib\html\div
      */
     protected $right = null;
 
@@ -43,20 +43,20 @@ class off_canvas extends \k1html\html\tag {
     protected $rigth_menu = null;
 
     /**
-     * @var \k1html\html\div
+     * @var \k1lib\html\div
      */
     public $content = null;
 
-    public function __construct(\k1html\html\body $parent = NULL) {
+    public function __construct(\k1lib\html\body $parent = NULL) {
         $this->parent = $parent;
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function left() {
         if (empty($this->left)) {
-            $this->left = new \k1html\html\div("off-canvas position-left", 'offCanvasLeft');
+            $this->left = new \k1lib\html\div("off-canvas position-left", 'offCanvasLeft');
             $this->left->set_attrib('data-off-canvas', TRUE);
             $this->left->append_to($this->parent);
         }
@@ -102,11 +102,11 @@ class off_canvas extends \k1html\html\tag {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function right() {
         if (empty($this->right)) {
-            $this->right = new \k1html\html\div("off-canvas position-right", 'offCanvasRight');
+            $this->right = new \k1lib\html\div("off-canvas position-right", 'offCanvasRight');
             $this->right->set_attrib('data-off-canvas', TRUE);
             $this->right->set_attrib('data-position', 'right');
             $this->right->append_to($this->parent);
@@ -115,11 +115,11 @@ class off_canvas extends \k1html\html\tag {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function content() {
         if (empty($this->content)) {
-            $this->content = new \k1html\html\div("off-canvas-content");
+            $this->content = new \k1lib\html\div("off-canvas-content");
             $this->content->set_attrib('data-off-canvas-content', TRUE);
             $this->content->append_to($this->parent);
         }

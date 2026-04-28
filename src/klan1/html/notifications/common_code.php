@@ -8,9 +8,9 @@
  * @package notifications
  */
 
-namespace k1html\html\notifications;
+namespace k1lib\html\notifications;
 
-use k1html\html\html_document;
+use k1lib\html\html_document;
 
 class common_code {
 

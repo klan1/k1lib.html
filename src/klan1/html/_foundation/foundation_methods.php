@@ -1,6 +1,6 @@
 <?php
 
-namespace k1html\html\foundation;
+namespace k1lib\html\foundation;
 
 trait foundation_methods {
 
@@ -44,7 +44,7 @@ trait foundation_methods {
     }
 
     public function append_close_button() {
-        $close_button = new \k1html\html\button(NULL, "close-button");
+        $close_button = new \k1lib\html\button(NULL, "close-button");
         $close_button->set_attrib("data-close", TRUE);
         $close_button->set_attrib("aria-label", "Close reveal");
         $close_button->append_span()->set_attrib("aria-hidden", TRUE)->set_value("&times;");
@@ -52,7 +52,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function align_center() {
         $this->set_attrib("class", "align-center", TRUE);
@@ -60,7 +60,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function align_left() {
         $this->set_attrib("class", "align-left", TRUE);
@@ -68,7 +68,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function align_right() {
         $this->set_attrib("class", "align-right", TRUE);
@@ -76,7 +76,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function align_justify() {
         $this->set_attrib("class", "align-justify", TRUE);
@@ -84,7 +84,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function small($cols, $clear = FALSE) {
         $this->small = $cols;
@@ -99,7 +99,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function medium($cols, $clear = FALSE) {
         $this->medium = $cols;
@@ -114,7 +114,7 @@ trait foundation_methods {
     }
 
     /**
-     * @return \k1html\html\div
+     * @return \k1lib\html\div
      */
     public function large($cols, $clear = FALSE) {
         $this->large = $cols;
