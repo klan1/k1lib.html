@@ -5,7 +5,8 @@ A comprehensive PHP library for generating HTML documents and components using a
 ## Features
 
 - **DOM-like Structure**: Create HTML documents by nesting objects, mirroring the natural structure of HTML.
-- **Comprehensive Tag Support**: Dedicated classes for almost all standard HTML tags (`div`, `table`, `form`, `input`, `p`, etc.).
+- **Comprehensive Tag Support**: Dedicated classes for almost all standard HTML tags (`div`, `table`, `form`, `input`, `p`, etc.). Recently expanded to include full Semantic Layout, Text Formatting, Table and List tags.
+
 - **Framework Integrations**: Built-in support for Bootstrap specialized components and methods for layouts.
 - **Flexible Attributes**: Easily set and modify HTML attributes through a fluent API.
 - **Component-Based**: Includes reusable components like accordions, modals, and grids.
