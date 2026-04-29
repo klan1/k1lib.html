@@ -4,6 +4,7 @@ namespace k1lib\html;
 
 /**
  * K1.lib V1 compatibility layer
+ * DO NOT USE THIS for examples or production
  */
 
 /**

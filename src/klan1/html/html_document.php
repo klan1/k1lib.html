@@ -54,7 +54,7 @@ class html_document extends tag {
     /**
      * @return body
      */
-    function body() {
+    function body() : body {
         return $this->body;
     }
 }

@@ -48,6 +48,15 @@ class head extends tag {
     }
 
     /**
+     * @return script
+     */
+    function link_js($src = NULL) {
+        $new = new script($src);
+        $this->append_child_tail($new);
+        return $new;
+    }
+
+    /**
      * 
      * @return meta
      */
