@@ -9,8 +9,9 @@ $doc->head()->set_title("Mazer Dashboard - k1lib.html");
 $doc->head()->append_meta("charset", "UTF-8");
 $doc->head()->append_meta("viewport", "width=device-width, initial-scale=1.0");
 
-$doc->head()->link_css("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
-$doc->head()->link_css("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+$doc->head()->link_css("assets/compiled/css/app.css");
+$doc->head()->link_css("assets/compiled/css/app-dark.css");
+$doc->head()->link_css("assets/compiled/css/iconly.css");
 
 $body = $doc->body();
 
