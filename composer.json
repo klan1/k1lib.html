@@ -6,6 +6,9 @@
     "require": {
         "php": "^8.2"
     },
+    "require-dev": {
+        "klan1/k1app-template-mazer": "dev-main"
+    },
     "autoload": {
         "psr-4": {
             "k1lib\\html\\": "src/klan1/html/"
